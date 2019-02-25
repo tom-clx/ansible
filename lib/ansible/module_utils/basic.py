@@ -577,7 +577,7 @@ def bytes_to_human(size, isbits=False, unit=None):
     else:
         suffix = base
 
-    return '%.2f %s' % (size / limit, suffix)
+    return '%.2f %s' % (float(size) / limit, suffix)
 
 
 def human_to_bytes(number, default_unit=None, isbits=False):
